@@ -1,0 +1,16 @@
+div {
+  color: black;
+}
+
+p {}
+
+p[title="page_link_active"] {
+  color: green;
+}
+
+p[title="page_link"] {
+  color: blue;
+}
+h1 {}
+
+h2 {}
