@@ -9,14 +9,41 @@
 </head>
 
 <body>
-  <div title="page_links">
-    <p title="page_link_active">Home</p>
-    <p title="page_link">Blog</p>
-    <p title="page_link">Resume</p>
-    <p title="page_link"><a href="pages/projects.html">Software Projects</a></p>
-    <p title="page_link">Hobby Projects</p>
-    <p title="page_link">About</p>
+  <div class="header">
+    <h1>Reynaldo Diego Benavidez</h1>
+    <h2>Senior Software Engineer</h2>
+    
+    <!-- The button element with an explicit action type and ID for JavaScript targeting -->
+    <button id="theme-toggle" type="button" aria-label="Toggle color theme">
+        Toggle Theme
+    </button>
   </div>
+  
+  <nav class="nav_bar">
+    <!-- <div class="nav_logo">My Website</div> -->
+    <ul class="nav_links">
+      <li title="page_link_active"><a href="index.html">Home</a></li>
+      <li title="page_link"><a href="pages/blog.html">Blog</a></li>
+      <li title="page_link"><a href="pages/resume.html">Resume</a></li>
+      <li title="page_link"><a href="pages/projects.html">Software Projects</a></li>
+      <li title="page_link"><a href="pages/hobby_projects.html">Hobby Projects</a></li>
+      <li title="page_link"><a href="pages/about.html">About</a></li>
+      <!-- TODO: Add a link to my github page. -->
+      <!-- TODO: Add a link to my linkedin page. -->
+      <!-- TODO: Add a way to contact me using a popup/modal. -->
+    </ul>
+  </nav>
+
+  <div class="content">
+  <p>I'm a Software Engineer with 10+ years of experience in the software industry. I have a strong background in
+    software development, specifically in mainframe environments, and a proven track record of delivering high-quality software solutions.</p>
+
+  </div>
+
+  <footer>
+    <p>Copyright &copy; 2026 Reynaldo Diego Benavidez. Built from scratch with HTML, CSS, and JavaScript.</p>
+  </footer>
+  <script src="./scripts/main.js" type="text/javascript"></script>
 </body>
 
 </html>
