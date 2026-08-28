@@ -14,6 +14,11 @@ html[data-theme="dark"] {
     --button-text: #f5f5f5;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 16px;
+}
 /* 3. Base page styling using variables */
 body {
     background-color: var(--bg-color);
@@ -42,7 +47,9 @@ div {
   color: black;
 }
 
-p {}
+p {
+  font-size: 1em;
+}
 
 p[title="page_link_active"] {
   color: green;
@@ -56,7 +63,10 @@ p[title="page_link"] {
 h2 {
     margin-left: 30px;
 }
-
+.container {
+  width: 100%;
+  
+}
 /* Base header */
 .header {
   display: flex;
@@ -66,6 +76,7 @@ h2 {
   background-color: #ffcc00;
   padding: 10px 20px;
   font-family: Arial, sans-serif;
+  font-size: 1em;
   border-radius: 15px;
 }
 
@@ -77,6 +88,7 @@ h2 {
   border-style: solid;
   border-width: 2px;
   border-radius: 15px;
+  font-size: 1em;
 }
 
 /* Base navigation container */
@@ -117,21 +129,41 @@ h2 {
 }
 
 /* Responsive adjustment for small mobile screens */
-@media (max-width: 600px) {
-  .navbar {
+
+@media screen {
+  html {
+    font-size: 16px;
+  }
+  body {
+    padding: 15px;
+  }
+  .header {
+    display: flex;
+    font-size: 4em;
+  }
+  .nav_bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  .nav-links {
+  .nav_links {
     flex-direction: column;
     width: 100%;
+    
   }
-  .nav-links a {
+  .nav_links a {
     width: 100%;
     box-sizing: border-box;
+    font-size: 3em;
+  }
+  .content {
+    font-size: 3em;
+  }
+  footer {
+    font-size: 2em;
   }
 }
+
 /* 1. Unvisited link */
 a:link {
     color: #1a73e8;
@@ -161,7 +193,8 @@ a:active {
 }
 
 footer {
-  position: absolute;
+  position: relative;
+  margin-top: 15px;
   bottom: 0;
   width: 100%;
   text-align: center;
