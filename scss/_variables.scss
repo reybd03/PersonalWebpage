@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Theme Variables & Mixins (Palette 3: Minimalist Zinc & Emerald)
+   ========================================================================== */
+
+// SCSS Breakpoints
+$bp-mobile: 1200px;
+$bp-tablet: 768px;
+
+// Media query mixin
+@mixin mobile {
+  @media screen and (max-width: #{$bp-mobile}) {
+    @content;
+  }
+}
+
+// 1. Default Light Theme (Minimalist Zinc & Emerald)
+:root,
+html[data-theme="light"] {
+  --bg-color: #fafafa;
+  --text-color: #18181b;
+  --header-bg: #18181b;
+  --header-text: #ffffff;
+  --nav-bg: #27272a;
+  --card-bg: #ffffff;
+  --card-border: #e4e4e7;
+  --accent-color: #10b981; // Bright Mint / Emerald
+  --muted-text: #71717a;
+  --button-bg: #f4f4f5;
+  --button-text: #18181b;
+  --badge-bg: #ecfdf5;
+  --badge-border: #a7f3d0;
+  --card-shadow: 0 4px 14px rgba(24, 24, 27, 0.05);
+}
+
+// 2. Dark Theme (Deep Obsidian & Mint Emerald)
+html[data-theme="dark"] {
+  --bg-color: #09090b;
+  --text-color: #f4f4f5;
+  --header-bg: #121215;
+  --header-text: #ffffff;
+  --nav-bg: #18181b;
+  --card-bg: #141417;
+  --card-border: #27272a;
+  --accent-color: #10b981; // Bright Mint / Emerald
+  --muted-text: #a1a1aa;
+  --button-bg: #27272a;
+  --button-text: #f4f4f5;
+  --badge-bg: #064e3b;
+  --badge-border: #047857;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}

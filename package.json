@@ -1,0 +1,24 @@
+{
+  "name": "personalwebpage",
+  "version": "1.0.0",
+  "description": "Webpage to host projects, resumes and examples",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass scss/main.scss style/main.css --no-source-map",
+    "sass:build:min": "sass scss/main.scss style/main.css --style=compressed --no-source-map",
+    "sass:watch": "sass --watch scss/main.scss:style/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reybd03/PersonalWebpage.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/reybd03/PersonalWebpage/issues"
+  },
+  "homepage": "https://github.com/reybd03/PersonalWebpage#readme",
+  "devDependencies": {
+    "sass": "^1.104.0"
+  }
+}

@@ -1,19 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resume</title>
+  <title>Resume - Reynaldo Diego Benavidez</title>
   <link rel="stylesheet" href="../style/main.css">
   <script src="../scripts/header.js"></script>
 </head>
 
 <body>
   <shared-header></shared-header>
-  <div class=content>
-    <p>Lastest Resume: TODO</p>
-  </div>
+
+  <main class="resume-wrapper">
+    <!-- Action buttons for user interaction -->
+    <div class="resume-actions">
+      <button type="button" class="resume-btn" onclick="window.print()" aria-label="Print or save as PDF">
+        🖨️ Print / Save as PDF
+      </button>
+      <a href="../../Reynaldo_Benavidez_Resume.md" class="resume-btn" download="Reynaldo_Benavidez_Resume.md" title="Download Markdown Version">
+        📄 Download Markdown
+      </a>
+    </div>
+
+    <article class="resume-card" aria-label="Reynaldo Benavidez Resume">
+      <!-- Resume Header -->
+      <header class="resume-header">
+        <h1 class="resume-name">Reynaldo Benavidez</h1>
+        <div class="resume-title">Senior Software Engineer | Full-Stack &amp; Backend Web Development</div>
+        <div class="resume-contact-bar">
+          <span>Austin, TX</span>
+          <span>&bull;</span>
+          <a href="tel:+13612322666">(361) 232-2666</a>
+          <span>&bull;</span>
+          <a href="mailto:rdbenavidez.08@gmail.com">rdbenavidez.08@gmail.com</a>
+          <span>&bull;</span>
+          <a href="https://linkedin.com/in/reynaldo-benavidez" target="_blank" rel="noopener">LinkedIn</a>
+          <span>&bull;</span>
+          <a href="https://github.com/reybd03" target="_blank" rel="noopener">GitHub</a>
+          <span>&bull;</span>
+          <span>Fluent in English &amp; Spanish</span>
+          <span>&bull;</span>
+          <span>US Military Veteran</span>
+        </div>
+      </header>
+
+      <!-- Professional Summary -->
+      <section class="resume-section" aria-labelledby="summary-heading">
+        <h2 id="summary-heading" class="resume-section-title">Professional Summary</h2>
+        <p class="resume-summary-text">
+          Senior Software Engineer with 10+ years of enterprise engineering experience specializing in backend services, 
+          RESTful API architecture, and microservices integration. Proven track record architecting resilient Java and Python 
+          backend solutions, building automated CI/CD delivery pipelines, and refactoring mission-critical distributed systems. 
+          Combines deep low-level system performance expertise with modern web technologies (Spring Boot, REST APIs, TypeScript, 
+          JavaScript, Docker, MySQL) to deliver scalable, high-throughput web applications.
+        </p>
+      </section>
+
+      <!-- Technical Skills -->
+      <section class="resume-section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="resume-section-title">Technical Skills</h2>
+        <div class="skills-list">
+          <div class="skill-category">
+            <span class="skill-label">Languages:</span>
+            <span class="skill-items">Java (8/11/17), Python, TypeScript, JavaScript, C/C++, SQL, Bash, HTML5, CSS3</span>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Backend &amp; Web:</span>
+            <span class="skill-items">Spring Boot, RESTful APIs, Microservices Architecture, Helidon, Quarkus, Node.js basics</span>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Databases &amp; Storage:</span>
+            <span class="skill-items">MySQL / MariaDB, DB2, Relational Schema Design, Query Optimization, Data Modeling</span>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Cloud, Containers &amp; DevOps:</span>
+            <span class="skill-items">Docker, Kubernetes, Jenkins CI/CD, Git, GitHub, Bitbucket, Artifactory, Linux/Unix, Postman</span>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Architecture &amp; Practices:</span>
+            <span class="skill-items">Distributed Systems Design, API Gateway Pattern, Agile/Scrum, Test-Driven Development (TDD), SDLC Automation, High Concurrency &amp; Memory Optimization</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Experience -->
+      <section class="resume-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="resume-section-title">Professional Experience</h2>
+
+        <!-- Rocket Software -->
+        <div class="timeline-item">
+          <div class="timeline-row">
+            <div>
+              <span class="org-name">Rocket Software</span> &ndash; <span class="role-title">Senior Software Engineer</span>
+            </div>
+            <div class="meta-info">11/2018 &ndash; Present | Austin, TX</div>
+          </div>
+          <ul class="bullet-points">
+            <li><strong>Microservices &amp; API Architecture:</strong> Designed and developed backend service enhancements for the IBM Unified Management Server (UMS) ecosystem utilizing Java 17; built high-throughput RESTful endpoints supporting real-time management and system analytics.</li>
+            <li><strong>SDLC &amp; Pipeline Automation:</strong> Engineered a centralized Python-based automation framework integrating Jira and Jenkins REST APIs to trigger dynamic regression pipelines upon PR creation/updates and automatically stream test results and environment artifacts to Artifactory.</li>
+            <li><strong>Developer Tooling &amp; Productivity:</strong> Developed 11 custom Python automation modules streamlining the build and integration pipeline, reducing release cycle turnaround by 25% and accelerating cross-functional feedback loops.</li>
+            <li><strong>High-Performance Refactoring:</strong> Analyzed and refactored core backend engine routines (Metal-C, C++), improving memory usage by 20% and ensuring stability and data throughput across high-concurrency environments.</li>
+            <li><strong>Agile Leadership &amp; Mentorship:</strong> Mentored junior and mid-level software engineers on clean architecture, API design standards, and modern development workflows; led sprint technical reviews and architectural discussions.</li>
+          </ul>
+        </div>
+
+        <!-- IBM -->
+        <div class="timeline-item">
+          <div class="timeline-row">
+            <div>
+              <span class="org-name">IBM</span> &ndash; <span class="role-title">Software Engineer &ndash; Systems &amp; Automation</span>
+            </div>
+            <div class="meta-info">03/2015 &ndash; 11/2018 | Tucson, AZ</div>
+          </div>
+          <ul class="bullet-points">
+            <li><strong>Distributed Systems Verification:</strong> Led functional verification and designed automated testing frameworks for large-scale enterprise storage virtualization engines (TS7700, DFSMSoam).</li>
+            <li><strong>Diagnostics &amp; Data Integrity:</strong> Engineered automated diagnostic suites and telemetry validation for enterprise NAS/NFS network storage devices and virtualized environments.</li>
+            <li><strong>Cross-Functional Collaboration:</strong> Partnered with systems architects to translate complex infrastructure requirements into robust, automated validation pipelines.</li>
+          </ul>
+        </div>
+
+        <!-- US Army Reserves -->
+        <div class="timeline-item">
+          <div class="timeline-row">
+            <div>
+              <span class="org-name">US Army Reserves</span> &ndash; <span class="role-title">Human Resources &amp; Logistics Specialist</span>
+            </div>
+            <div class="meta-info">08/2007 &ndash; 08/2019 | Corpus Christi, TX</div>
+          </div>
+          <ul class="bullet-points">
+            <li><strong>Information Systems Administration:</strong> Managed, audited, and secured digital records and personnel management systems for over 1,300 service members with strict adherence to data integrity and compliance standards.</li>
+            <li><strong>Mission Logistics &amp; Process Management:</strong> Coordinated 300+ operational logistics and contracting packets while deployed to Iraq, interfacing directly with the Joint Contracting Command in high-tempo environments.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Featured Technical Projects -->
+      <section class="resume-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="resume-section-title">Featured Technical Projects</h2>
+
+        <div class="timeline-item">
+          <div class="timeline-row">
+            <div>
+              <span class="org-name">Spring Boot Microservices API Hub</span>
+            </div>
+            <div class="meta-info">
+              <a href="https://github.com/reybd03/Spring_Api_Hub" target="_blank" rel="noopener">github.com/reybd03/Spring_Api_Hub</a>
+            </div>
+          </div>
+          <ul class="bullet-points">
+            <li>Architected a distributed microservices platform featuring an API Gateway coordinating separate User, Order, and Payment services with isolated database persistence layers.</li>
+            <li>Implemented robust RESTful endpoints with input validation, custom exception filters, and containerized multi-container orchestration using Docker.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-row">
+            <div>
+              <span class="org-name">Personal Web Platform &amp; Portfolio</span>
+            </div>
+            <div class="meta-info">Vanilla Web Stack</div>
+          </div>
+          <ul class="bullet-points">
+            <li>Designed and built a responsive personal portfolio platform from scratch using semantic HTML5, modern CSS3 (custom properties, dark/light theme switching, print media rules), and vanilla JavaScript.</li>
+            <li>Engineered reusable Web Components (such as custom <code>&lt;shared-header&gt;</code>) and dynamic client-side state management.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education & Certifications -->
+      <section class="resume-section" aria-labelledby="education-heading">
+        <h2 id="education-heading" class="resume-section-title">Education &amp; Certifications</h2>
+
+        <div class="edu-item">
+          <div class="timeline-row">
+            <span class="org-name">American Military University</span>
+            <span class="meta-info">Graduated 05/2015</span>
+          </div>
+          <div>Bachelor of Science in Information Systems</div>
+        </div>
+
+        <div style="margin-top: 1rem;">
+          <strong>Professional Certifications:</strong>
+          <ul class="cert-list">
+            <li>Docker Essentials: Extend Your Apps with Containers</li>
+            <li>Getting Started with Kubernetes and IBM Cloud Container Service</li>
+            <li>Streaming Analytics Basics for Python Developers</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
   <footer>
     <p>Copyright &copy; 2026 Reynaldo Diego Benavidez. Built from scratch with HTML, CSS, and JavaScript.</p>
   </footer>
