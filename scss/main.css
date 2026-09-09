@@ -490,11 +490,16 @@ footer {
 
 /* Print Styles */
 @media print {
+  page {
+    size: auto;
+    margin: 0 !important;
+  }
   body {
     background: #ffffff !important;
     color: #1a1a1a !important;
     padding: 0 !important;
     font-size: 12pt;
+    margin: 1em;
   }
   .header,
   .nav_bar,
