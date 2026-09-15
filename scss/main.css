@@ -262,7 +262,10 @@ footer {
   font-size: 1rem;
   line-height: 1.6;
 }
-.content h1, .content h2, .content h3, .content h4 {
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
   color: var(--text-color);
   margin-top: 0;
 }
@@ -280,6 +283,15 @@ footer {
 .content h3 {
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
+}
+.content img {
+  width: 200px;
+  /* Change to your desired width */
+  height: 150px;
+  /* Change to your desired height */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Optional: Prevents image distortion */
 }
 @media screen and (max-width: 1200px) {
   .content {
