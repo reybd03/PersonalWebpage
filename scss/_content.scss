@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 /* ==========================================================================
    Content Container (Palette 1: Slate & Cobalt)
@@ -15,7 +15,10 @@
   font-size: 1rem;
   line-height: 1.6;
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: var(--text-color);
     margin-top: 0;
   }
@@ -36,6 +39,15 @@
   h3 {
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
+  }
+
+  img {
+    width: 200px;
+    /* Change to your desired width */
+    height: 150px;
+    /* Change to your desired height */
+    object-fit: cover;
+    /* Optional: Prevents image distortion */
   }
 
   @include mobile {
