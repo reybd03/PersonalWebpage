@@ -47,7 +47,8 @@ html[data-theme=dark] {
    ========================================================================== */
 html {
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
   font-size: 16px;
 }
 
@@ -261,7 +262,10 @@ footer {
   font-size: 1rem;
   line-height: 1.6;
 }
-.content h1, .content h2, .content h3, .content h4 {
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
   color: var(--text-color);
   margin-top: 0;
 }
@@ -279,6 +283,15 @@ footer {
 .content h3 {
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
+}
+.content img {
+  width: 200px;
+  /* Change to your desired width */
+  height: 150px;
+  /* Change to your desired height */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Optional: Prevents image distortion */
 }
 @media screen and (max-width: 1200px) {
   .content {
@@ -494,6 +507,7 @@ footer {
     color: #1a1a1a !important;
     padding: 0 !important;
     font-size: 12pt;
+    margin: 1mm;
   }
   .header,
   .nav_bar,
@@ -527,6 +541,14 @@ footer {
     color: #1a1a1a !important;
     text-decoration: none !important;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+  /*
+  #1: LinkedIn and Github links on resume
+  Display the href value after the link text
+  */
+  a:not([href^="mailto:"]):not([href^="tel:"])::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #555;
+    order: 999;
+  }
+}/*# sourceMappingURL=main.css.map */

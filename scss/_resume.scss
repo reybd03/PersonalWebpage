@@ -203,11 +203,6 @@
 
 /* Print Styles */
 @media print {
-  @page {
-    size: auto;
-    margin: 0mm;
-  }
-
   body {
     background: #ffffff !important;
     color: #1a1a1a !important;
@@ -253,5 +248,16 @@
   a {
     color: #1a1a1a !important;
     text-decoration: none !important;
+  }
+
+  /*
+  #1: LinkedIn and Github links on resume
+  Display the href value after the link text
+  */
+  a:not([href^="mailto:"]):not([href^="tel:"])::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #555;
+    order: 999;
   }
 }
