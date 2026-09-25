@@ -1,7 +1,7 @@
 const latest_blog = document.getElementById("latest_blog");
 const blogs = document.getElementById("blogs");
 const blogPath = "../pages/blogs/";
-const url = "http://localhost:3000";
+const url = "http://localhost:3000/api/read-file";
 
 // Format: ../blogs/YYYY_MM/DDMonth
 const currentYear = new Date().getFullYear(); // Output: YYYY
