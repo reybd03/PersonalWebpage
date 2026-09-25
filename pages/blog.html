@@ -11,10 +11,29 @@
 
 <body>
   <shared-header></shared-header>
+  <div class="content">
+    <div id="latest_blog">
+      <h2>Latest Blog</h2>
+    </div>
+    <div id="blogs">
+      <h2>Previous Blogs</h2>
+      {% for post in site.posts %}
+        <article>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+      
+          <!-- This renders the actual Markdown content converted to HTML -->
+          {{ post.content }}
+        </article>
+        <hr>
+      {% endfor %}
+    </div>
+  </div>
   <footer>
     <p>Copyright &copy; 2026 Reynaldo Diego Benavidez. Built from scratch with HTML, CSS, and JavaScript.</p>
   </footer>
-  <script src="../scripts/main.js" type="text/javascript"></script>  
+  <script src="../scripts/main.js" type="text/javascript"></script>
+  <!-- <script src="../scripts/blogs.js" type="text/javascript"></script> -->
 </body>
 
 </html>
