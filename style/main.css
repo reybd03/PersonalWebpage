@@ -20,6 +20,7 @@ html[data-theme=light] {
   --badge-bg: #ecfdf5;
   --badge-border: #a7f3d0;
   --card-shadow: 0 4px 14px rgba(24, 24, 27, 0.05);
+  --nihilakh: turquoise;
 }
 
 html[data-theme=dark] {
@@ -37,6 +38,7 @@ html[data-theme=dark] {
   --badge-bg: #064e3b;
   --badge-border: #047857;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --nihilakh: gold;
 }
 
 /* ==========================================================================
@@ -249,8 +251,8 @@ footer {
    Main SCSS Entry Point
    ========================================================================== */
 /* ==========================================================================
-   Content Container (Palette 1: Slate & Cobalt)
-   ========================================================================== */
+    Content Container (Palette 1: Slate & Cobalt)
+    ========================================================================== */
 .content {
   padding: 2rem;
   margin: 1.5rem 0;
@@ -292,6 +294,12 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   /* Optional: Prevents image distortion */
+}
+.content ul {
+  list-style: none;
+}
+.content li {
+  list-style: none;
 }
 @media screen and (max-width: 1200px) {
   .content {
@@ -551,4 +559,35 @@ footer {
     color: #555;
     order: 999;
   }
+}
+/* ==========================================================================
+   Main SCSS Entry Point
+   ========================================================================== */
+/* ==========================================================================
+    Hobby Projects
+    ========================================================================== */
+.hobbySubmenu {
+  display: none;
+}
+
+.hobbySubmenu.isOpen {
+  display: block;
+}
+
+/* Top-level Menu Items */
+#Necrons a {
+  color: var(--accent-color);
+  list-style: none;
+}
+
+/* Dropdown Core Logic */
+/*
+#Necrons ul {
+    position: relative; 
+    list-style: none;
+    display: none;
+}
+*/
+#Necrons a#nihilakh {
+  color: var(--nihilakh);
 }/*# sourceMappingURL=main.css.map */

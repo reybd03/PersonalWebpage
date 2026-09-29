@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+/* ==========================================================================
+    Hobby Projects
+    ========================================================================== */
+.hobbySubmenu {
+    display: none;
+}
+
+.hobbySubmenu.isOpen {
+    display: block;
+}
+
+
+/* Top-level Menu Items */
+#Necrons a {
+    color: var(--accent-color);
+    list-style: none;
+}
+
+/* Dropdown Core Logic */
+/*
+#Necrons ul {
+    position: relative; 
+    list-style: none;
+    display: none;
+}
+*/
+
+#Necrons a#nihilakh {
+    color: var(--nihilakh);
+}

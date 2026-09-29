@@ -30,6 +30,9 @@ html[data-theme="light"] {
   --badge-bg: #ecfdf5;
   --badge-border: #a7f3d0;
   --card-shadow: 0 4px 14px rgba(24, 24, 27, 0.05);
+
+  // Hobby Styles
+  --nihilakh: turquoise;
 }
 
 // 2. Dark Theme (Deep Obsidian & Mint Emerald)
@@ -48,4 +51,7 @@ html[data-theme="dark"] {
   --badge-bg: #064e3b;
   --badge-border: #047857;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+
+  // Hobby Styles
+  --nihilakh: gold;
 }

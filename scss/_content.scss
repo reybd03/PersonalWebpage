@@ -1,8 +1,8 @@
 @use "variables" as *;
 
 /* ==========================================================================
-   Content Container (Palette 1: Slate & Cobalt)
-   ========================================================================== */
+    Content Container (Palette 1: Slate & Cobalt)
+    ========================================================================== */
 
 .content {
   padding: 2rem;
@@ -48,6 +48,12 @@
     /* Change to your desired height */
     object-fit: cover;
     /* Optional: Prevents image distortion */
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    list-style: none;
   }
 
   @include mobile {

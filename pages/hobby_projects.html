@@ -20,27 +20,58 @@
       <span class="hobbyTitle">Joinery</span>
       
     </div>
+    
+<!-- Table Top Section-->
     <h3>TableTop</h3>
-    <div class="wh40k" id="wh40kSection">
-      <span class="hobbyTitle">Warhammer 40k</span>
-      <!-- <div class="wh40kFaction">
-        <p>Space Marines</p>
-        <span id="SpaceMarines"></span>
-      </div>
-      <div class="wh40kFaction">
-        <p>Chaos Space Marines</p>
-        <span id="ChaosSpaceMarines"></span>
-      </div>
-      -->
-      <div class="wh40kFaction">
-        <ul>Necrons</ul>
-        <!-- span vs list vs form-->
-        <li id="NecronName" class="modelName"></li>
-        <li id="NecronsPics" class="modelPics"></li>
-      </div> 
+<!-- Magic The Gathering -->
+    <div class="mtg" id="mtgSection">
+      <ul>
+        <li class="hobbyTitle">
+          <a href="#" class="subMenuToggle">Magic: The Gathering</a>
+          <ul class="hobbySubmenu">
+            <li id="list1" class="mtgDeck"><a href="#">MTG Placeholder</a></li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
-    <h3>Classic Cars</h3>
-    <p>TODO</p>
+
+<!-- Warhammer 40k -->
+    <div class="wh40k" id="wh40kSection">
+      <ul>
+        <li class="hobbyTitle">
+          <a href="#" class="subMenuToggle">Warhammer 40k</a>
+          <ul class="hobbySubmenu">
+            <!-- <div class="wh40kFaction">
+              <p>Space Marines</p>
+              <span id="SpaceMarines"></span>
+            </div>
+            <div class="wh40kFaction">
+              <p>Chaos Space Marines</p>
+              <span id="ChaosSpaceMarines"></span>
+            </div>
+            -->
+            <li id="Necrons" class="wh40kFaction"><a href="#" class="subMenuToggle">Necrons</a>
+              <ul class="hobbySubmenu">
+                <li id="NecronName" class="modelName">
+                  <ul class="hobbySubmenu">
+                    <li id="NecronsPics" class="modelPics"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <label for="classicCars"><h3>Classic Cars</h3></label>
+    <select id="classicCars">
+      <optgroup label="EngineWork">
+        <option value="test">Test</option>
+        <option value="test1">Test1</option>
+      </optgroup>
+    </select>
   </div>
   <footer>
     <p>Copyright &copy; 2026 Reynaldo Diego Benavidez. Built from scratch with HTML, CSS, and JavaScript.</p>
