@@ -1,0 +1,25 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/style/main.css' | relative_url }}">
+  <script src="{{ '/scripts/header.js' | relative_url }}"></script>
+</head>
+
+<body>
+  <shared-header></shared-header>
+  <div class="content">
+    {{ content }}
+  </div>
+  <footer>
+    <p>Copyright &copy; 2026 Reynaldo Diego Benavidez. Built from scratch with HTML, CSS, and JavaScript.</p>
+  </footer>
+  <script src="{{ '/scripts/main.js' | relative_url }}" type="text/javascript"></script>
+</body>
+
+</html>

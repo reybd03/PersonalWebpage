@@ -1,3 +1,8 @@
 markdown: kramdown
 highlighter: rouge
 baseurl: /PersonalWebpage
+url: https://reybd03.github.io
+title: Reynaldo D. Benavidez
+description: >
+  Personal webpage of Reynaldo Diego Benavidez, Senior Software Engineer,
+  sharing thoughts on backend engineering, software architecture, and hobby projects.
