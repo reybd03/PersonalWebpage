@@ -2,7 +2,7 @@
 
 **Senior Software Engineer | Full-Stack & Backend Web Development**  
 Austin, TX | (361) 232-2666 | [rdbenavidez.08@gmail.com](mailto:rdbenavidez.08@gmail.com)  
-[LinkedIn](https://linkedin.com/in/reynaldo-benavidez) | [GitHub](https://github.com/reybd03) | Fluent in English & Spanish | US Military Veteran
+[LinkedIn](https://www.linkedin.com/in/reynaldo-benavidez-ab91968a/) | [GitHub](https://github.com/reybd03) | Fluent in English & Spanish | US Military Veteran
 
 ---
 
@@ -14,7 +14,7 @@ Senior Software Engineer with 10+ years of enterprise engineering experience spe
 
 ## Technical Skills
 
-- **Languages:** Java (8/11/17/26), Python, TypeScript, JavaScript, C/C++, SQL, Bash, HTML5, CSS3
+- **Languages:** Java (8/11/17), Python, TypeScript, JavaScript, C/C++, SQL, Bash, HTML5, CSS3
 - **Backend & Web:** Spring Boot, RESTful APIs, Microservices Architecture, Helidon, Quarkus, Node.js basics
 - **Databases & Storage:** MySQL / MariaDB, DB2, Relational Schema Design, Query Optimization, Data Modeling
 - **DevOps, Cloud & Tooling:** Docker, Kubernetes, Jenkins CI/CD, Git, GitHub, Bitbucket, Artifactory, Linux/Unix, Postman
@@ -28,7 +28,7 @@ Senior Software Engineer with 10+ years of enterprise engineering experience spe
 
 **Senior Software Engineer** | _November 2018 – Present_
 
-- **Microservices & API Architecture:** Designed and developed backend service enhancements for the IBM Unified Management Server (UMS) ecosystem utilizing Java 17; built high-throughput RESTful endpoints supporting real-time management and system analytics.
+- **Microservices & API Architecture:** Designed and developed backend service enhancements for the IBM Unified Management Server (UMS) ecosystem utilizing TypeScript, Java 17, and Spring Boot; built high-throughput RESTful endpoints supporting real-time management and system analytics.
 - **SDLC & Pipeline Automation:** Engineered a centralized Python-based automation framework integrating Jira and Jenkins REST APIs to trigger dynamic regression pipelines upon PR creation/updates and automatically stream test results and environment artifacts to Artifactory.
 - **Developer Tooling & Productivity:** Developed 11 custom Python automation modules streamlining the build and integration pipeline, reducing release cycle turnaround by 25% and accelerating cross-functional feedback loops.
 - **High-Performance Refactoring:** Analyzed and refactored core backend engine routines (Metal-C, C++), improving memory usage by 20% and ensuring stability and data throughput across high-concurrency environments.
