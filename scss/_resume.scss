@@ -203,6 +203,9 @@
 
 /* Print Styles */
 @media print {
+  shared-header {
+    display: none !important;
+  }
   body {
     background: #ffffff !important;
     color: #1a1a1a !important;
